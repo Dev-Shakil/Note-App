@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="partials/bootstrap.min.css" rel="stylesheet"/>
+	<link href="style.css" rel="stylesheet"/>
+	<title>Magic Note</title>
+</head>
+<body>
+	<nav class="navbar-expand-lg nav navbar-dark bg-primary py-1">
+		<div class="container-fluid">		
+			<div class="row">
+				<a class="navbar-brand col-sm-3" href="">
+					<strong><b>Magic Notes</b></strong>
+				</a>
+				<button type="button" class="navbar-toggler mr-md-2 ml-auto" data-target="#myMenuToggler" data-toggle="collapse" aria-controls="myMenuToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="myMenuToggler">
+					<ul class="navbar-nav col-sm-5">
+						<li class="nav-item"><a href="/forum" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="/forum/category.php" class="nav-link" >Cattegory</a></li>
+						<li class="nav-item"><a href="/forum/about.php" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="/forum/contact.php" class="nav-link">Contact</a></li>
+						
+					</ul>
+				</div>
+				<form class="form-inline col-sm-4 my-0 py-0 search">
+					<input class="form-control mr-1" id = "searchText" type="search" placeholder="Search" aria-label="search"/>
+					<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</div>	
+	</nav>
+	<div class="container">
+		<h1 class="text-center my-3 text-primary text-uppercase">Wellcome To Magic Notes</h1>
+		<hr>
+		<div class="form-group">
+			<label for="title">Add Title</label>
+			<input type="text" class="form-control" name="title" placeholder="Type Your Title" id ="addTitle"/>
+		</div>
+		<div class="form-group">
+			<h3>Add Your Note</h3>
+			<textarea class="form-control" id="addText" cols="30" rows="3"></textarea>
+		</div>
+		<button type="submit" class="btn btn-outline-primary" id="addBtn">Add Note</button>
+		<hr>
+		<h1 class="text-success text-center">Your Notes</h1>
+		<hr>
+		<div class="container-fluid row" id="notes">
+			
+		</div>
+	<div>
+	
+	<script src="partials/bootstrap.min.js"></script>	
+	<script src="partials/jquery.js"></script>
+	<script src="index.js"></script>
+	</body>
+</html>
